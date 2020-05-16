@@ -1,0 +1,10 @@
+{
+"extension-id": "horizontal-workspaces",
+"uuid": "horizontal-workspaces@gnome-shell-extensions.gcampax.github.com",
+"settings-schema": "org.gnome.shell.extensions.horizontal-workspaces",
+"gettext-domain": "gnome-shell-extensions",
+"name": "Horizontal workspaces",
+"description": "Use a horizontal workspace layout",
+"shell-version": [ "3.34" ],
+"url": "https://gitlab.gnome.org/GNOME/gnome-shell-extensions"
+}
