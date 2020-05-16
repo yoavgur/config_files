@@ -2,14 +2,14 @@
 
 # Install vimrc
 mv -f ~/.vimrc ~/.vimrc.old
-mv ./.vimrc ~/.vimrc
+cp ./.vimrc ~/.vimrc
 
 # Install tmux
-mv -f ~/.tmux.config ~/.tmux.config.old
-mv ./.tmux.config ~/.tmux.config
+mv -f ~/.tmux.conf ~/.tmux.conf.old
+cp ./.tmux.conf ~/.tmux.conf
 
 # Install Fish
 mv -f ~/.config/fish ~/.config/fish.old
-mv ./fish ~/.config/fish
+cp -r ./fish ~/.config/fish
 
 echo "Finished!"
