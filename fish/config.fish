@@ -6,4 +6,4 @@ function fish_greeting
 end
 
 # Aliases
-alias ins="sudo apt install"
+alias ins="sudo apt install -y"
