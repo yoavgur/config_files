@@ -2,7 +2,8 @@
 
 # Apt
 sudo apt update
-sudo apt install fish
+sudo apt install fish -y
+sudo apt install net-tools
 
 # Install vimrc
 echo "[+] Installing vimrc"
@@ -22,4 +23,5 @@ rm -rf ~/.config/fish.old
 mv -f ~/.config/fish ~/.config/fish.old
 cp -r ./fish ~/.config/fish
 
-echo "Finished!"
+fish -c "echo Finished!"
+
