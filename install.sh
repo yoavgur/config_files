@@ -5,10 +5,13 @@ sudo apt update
 sudo apt install fish -y
 sudo apt install net-tools
 
-# Install vimrc
+# Install vim
 echo "[+] Installing vimrc"
 mv -f ~/.vimrc ~/.vimrc.old
+mv -f ~/.vim ~/.vim.old
+mkdir ~/.vim/undodir
 cp ./.vimrc ~/.vimrc
+cp -r ./.vim ~/.vim
 
 # Install tmux
 echo "[+] Installing tmux.conf"

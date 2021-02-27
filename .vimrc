@@ -10,6 +10,7 @@ noremap <C-l> :tabnext<CR>
 noremap <C-h> :tabprevious<CR>
 
 " Infinite Undo Memory
+set undofile
 set undodir=~/.vim/undodir
 
 " Sets how many lines of history VIM has to remember
@@ -29,6 +30,10 @@ let mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
+
+" My custom things
+nmap <leader>n :noh<cr>
+nmap <leader>q :q<cr>
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
@@ -99,7 +104,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    :colorscheme peaksea
 catch
 endtry
 
@@ -187,10 +192,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " => Status line
 """"""""""""""""""""""""""""""
 " Always show the status line
-set laststatus=2
-
-" Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+"set laststatus=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
