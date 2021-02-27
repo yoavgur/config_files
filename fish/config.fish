@@ -8,3 +8,4 @@ end
 # Aliases
 alias ins="sudo apt install -y"
 alias start="/mnt/c/Windows/explorer.exe"
+alias ipython="ipython3"
