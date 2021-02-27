@@ -1,9 +1,18 @@
 #!/bin/bash
 
+# Hostname
+echo toaster | sudo tee /etc/hostname
+
+# Set up git
+git config --global user.email "yoavgurarieh@gmail.com"
+git config --global user.name "Yoav Gur Arieh"
+
 # Apt
 sudo apt update
-sudo apt install fish -y
-sudo apt install net-tools
+sudo apt install -y fish
+sudo apt install -y net-tools
+sudo apt install -y python3-pip
+sudo apt install -y ipython3
 
 # Install vim
 echo "[+] Installing vimrc"
@@ -15,6 +24,7 @@ cp -r ./.vim ~/.vim
 
 # Install tmux
 echo "[+] Installing tmux.conf"
+tmux -c echo test
 mv -f ~/.tmux.conf ~/.tmux.conf.old
 cp ./.tmux.conf ~/.tmux.conf
 
@@ -26,5 +36,7 @@ rm -rf ~/.config/fish.old
 mv -f ~/.config/fish ~/.config/fish.old
 cp -r ./fish ~/.config/fish
 
-fish -c "echo Finished!"
+echo Finished!
+
+fish
 
