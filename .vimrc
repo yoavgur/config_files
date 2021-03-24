@@ -1,3 +1,6 @@
+" Useful plugins
+set rtp+=~/.vim/plugins/tabnine
+
 " Make 'jk' leave insert mode
 inoremap jk <esc>
 
@@ -8,6 +11,7 @@ inoremap jk <esc>
 " Move Tabs
 noremap <C-l> :tabnext<CR>
 noremap <C-h> :tabprevious<CR>
+noremap <C-t> :tabnew 
 
 " Infinite Undo Memory
 set undofile
@@ -172,12 +176,6 @@ map <C-space> ?
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
-
-" Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
